@@ -4,13 +4,8 @@ permissions:
   contents: read
 
 on:
-  pull_request:
-    branches: [main, dev]
-    paths:
-      - 'server/**'
-      - '.github/workflows/test.yml'
-      - 'client/**'
-
+  workflow_dispatch:
+  # Automatic triggers removed; invoke through FounderOS/Admin Gate.
 jobs:
   server-tests:
     name: Server Tests
