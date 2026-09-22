@@ -1,9 +1,8 @@
 name: Close PRs with unchanged wrong base branch
 
 on:
-  schedule:
-    - cron: '0 */6 * * *' # Every 6 hours
-
+  workflow_dispatch:
+  # Automatic triggers removed; invoke through FounderOS/Admin Gate.
 permissions:
   pull-requests: write
   issues: write
